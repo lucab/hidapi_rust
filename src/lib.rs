@@ -124,16 +124,16 @@ impl Iterator for HidDeviceInfoEnumeration {
 
 #[derive(Debug)]
 pub struct HidDeviceInfo {
-    path: String,
-    vendor_id: c_ushort,
-    product_id: c_ushort,
-    //serial_number: String,
-    release_number: c_ushort,
-    manufactor_string: String,
-    product_string: String,
-    usage_page: c_ushort,
-    usage: c_ushort,
-    interface_number: c_int,
+    pub path: String,
+    pub vendor_id: c_ushort,
+    pub product_id: c_ushort,
+    //pub serial_number: String,
+    pub release_number: c_ushort,
+    pub manufactor_string: String,
+    pub product_string: String,
+    pub usage_page: c_ushort,
+    pub usage: c_ushort,
+    pub interface_number: c_int,
 }
 
 pub struct HidDevice<'a> {
